@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/hi_william_luther"
+            android:textColor="@color/deep_ocean"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry,VisualLintOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:text="@string/welcome_to_localog"
+            android:textColor="@color/deep_ocean" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/saved_location_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_top_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/saved_location"
+        android:textColor="@color/deep_blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/add_saved_location_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/linear_layout_top_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/baseline_add_location_24"
+        tools:ignore="ContentDescription" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add_saved_location_button"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:padding="8dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:id="@+id/navigationBar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/layout_rounded_corner"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/homeButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="@string/home_icon"
+                android:padding="8dp"
+                android:src="@drawable/baseline_home_white_24" />
+
+            <ImageView
+                android:id="@+id/mapButton"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="@string/map_icon"
+                android:padding="8dp"
+                android:src="@drawable/baseline_map_grey_24" />
+
+            <ImageView
+                android:id="@+id/historyButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="@string/history_icon"
+                android:padding="8dp"
+                android:src="@drawable/baseline_history_grey_24" />
+
+            <ImageView
+                android:id="@+id/accountButton"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="@string/account_icon"
+                android:padding="8dp"
+                android:src="@drawable/baseline_account_grey_24" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

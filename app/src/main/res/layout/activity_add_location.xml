@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddLocationActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="25dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="16dp"
+            android:src="@drawable/baseline_back_24"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/add_location_title_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/add_location"
+            android:textColor="@color/deep_blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/check_button"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="16dp"
+            android:src="@drawable/baseline_check_mark_24"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add_location_sub_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_top_layout"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:lineHeight="20sp"
+        android:text="@string/capture_the_essence_of_your_favorite_places_by_adding_a_new_location_to_your_localog"
+        android:textColor="@color/deep_blue"
+        android:textSize="18sp"
+        tools:ignore="UnusedAttribute" />
+
+
+    <TextView
+        android:id="@+id/add_location_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_location_sub_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/location_name"
+        android:textColor="@color/deep_blue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/add_location_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_location_name_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_text_modify"
+        android:hint="@string/enter_location"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/deep_blue"
+        android:textColorHint="@color/blue_opacity"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/location_address_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_location_name_edit_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/address"
+        android:textColor="@color/deep_blue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/add_location_address_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_address_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_text_modify"
+        android:hint="@string/enter_address"
+        android:inputType="text"
+        android:padding="14dp"
+        android:textColor="@color/deep_blue"
+        android:textColorHint="@color/blue_opacity"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/add_location_description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_location_address_edit_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/description"
+        android:textColor="@color/deep_blue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/add_location_description_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_location_description_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_text_modify"
+        android:gravity="top"
+        android:hint="@string/enter_description"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:minLines="3"
+        android:padding="14dp"
+        android:textColor="@color/deep_blue"
+        android:textColorHint="@color/blue_opacity"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+</RelativeLayout>

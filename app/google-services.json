@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1055540350230",
+    "firebase_url": "https://eldroid---final-project-48b96-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "eldroid---final-project-48b96",
+    "storage_bucket": "eldroid---final-project-48b96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055540350230:android:ed6a08fb40b0fc4e7c9437",
+        "android_client_info": {
+          "package_name": "com.zambo.locationdiary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoFIjPsMZoTgV8lCqfdyG8KQOdk8JyS9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
